@@ -1,0 +1,173 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.15);
+  position: relative;
+}
+
+input {
+  border: none;
+  color: white;
+  height: 48px;
+  /* width: 93.4%; */
+  border-radius: 0 5px 5px 0px;
+  padding: 0px 40px 0px 10px;
+  font-size: 12px;
+  /* box-shadow: 0px 1px 4px rgba(0,0,0,0.1); */
+  background-color: #B002CC;
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255, 255, 255, 0.733);
+  opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba(255, 255, 255, 0.733);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgba(255, 255, 255, 0.733);
+}
+
+form{
+  background-color: #B002CC;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  position: absolute;
+  border: none;
+  background: none;
+  top: 0;
+  right: 0;
+  height: 30px;
+  padding: 0;
+  width: 50px;
+}
+
+.buttonText {
+  font-size: 12px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button i {
+  width: 100%;
+  color: #6d7b98;
+  line-height: 50px;
+  font-size: 22px;
+}
+
+.mybutton{
+  height:100% ;
+}
+
+#submitButton{
+  height: 100%;
+  color: #FFF;
+  font-weight: 600;;
+}
+
+.arrowcol1{
+  text-align:start;
+}
+.arrowcol2{
+  text-align:end;
+}
+.arrow{
+  height:36px;
+}
+
+.results {
+  padding: 0px;
+}
+
+.results ul {margin: 0; padding: 0; }
+.results ul li {
+  list-style: none;
+  border-radius: 3px;
+  opacity: 0;
+  display: none;
+  padding: 8px 12px;
+  transition: all .5s linear;
+}
+
+.show .results ul li {
+  opacity: 1;
+  display: block;
+}
+
+.show .results {
+  padding: 10px;
+}
+
+.results ul li:hover {
+  background: #ececec
+}
+
+.ellusionNAV {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#logo{
+  margin-top: 5%;
+  height:75px;
+}
+
+.icon{
+  margin:3%;
+  color: white;
+}
+
+#list1{
+  list-style: none;
+  color: white;
+}
+
+li.list-items{
+  font-size: 16px;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  .arrow{
+    height:64px;
+  }
+  .arrowcol1{
+    text-align: end;
+  }
+  .arrowcol2{
+    text-align:start;
+  }
+  #logo{
+    margin-top: 1%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .svgContainer{
+    width: 50%;
+  }
+}
